@@ -1,0 +1,109 @@
+# Put this file at: _data/projects.yml
+
+- title: "Decentralized tag localization with RSSD-based DoA + tag design"
+  period: "2024–2025"
+  year_end: 2025
+  featured: true
+  summary: "Decentralized indoor localization approach combining RSSD-based DoA estimation and tag/system design for accurate, scalable deployments."
+  keywords: ["localization", "DoA", "RSSD", "decentralized", "RF sensing"]
+  links:
+    paper: "https://doi.org/10.1109/JIOT.2025.3604049"
+  my_contribution_todo:
+    - "TODO: clarify your role (e.g., algorithm design / implementation / experiments / writing)"
+    - "TODO: add reproducibility artifact (code, dataset, demo)"
+  demo_idea:
+    - "Interactive 2D simulator: anchors + tag, RSSD noise slider, DoA arrow visualization"
+    - "Short GIF/video: experiment setup + qualitative results"
+
+- title: "Multi-pose compensation for FoV-limited decentralized indoor localization"
+  period: "2024–2025"
+  year_end: 2025
+  featured: true
+  summary: "Compensate field-of-view constraints in decentralized indoor localization via multi-pose techniques to improve robustness under practical motion/orientation."
+  keywords: ["indoor localization", "FoV constraint", "multi-pose", "DoA", "calibration"]
+  links:
+    paper: "https://doi.org/10.1109/TAP.2025.3588741"
+  my_contribution_todo:
+    - "TODO: your key technical contribution (modeling, estimator, calibration, evaluation)"
+  demo_idea:
+    - "Web demo: rotate a tag/antenna icon; show how multi-pose reduces bias"
+    - "Plotly chart: error vs. #poses / orientation"
+
+- title: "Adaptive calibration for 360° indoor DoA estimation"
+  period: "2025"
+  year_end: 2025
+  featured: true
+  summary: "Adaptive calibration + compensation scheme to improve DoA estimation accuracy and enable near-360° coverage in indoor settings."
+  keywords: ["DoA", "adaptive calibration", "indoor", "360 coverage"]
+  links:
+    paper: "https://doi.org/10.1109/AP-S/CNC-USNC-URSI55537.2025.11265983"
+  my_contribution_todo:
+    - "TODO: what did you implement/measure?"
+  demo_idea:
+    - "Slider: calibration on/off → show error distribution shift"
+
+- title: "Sub-degree DoA in indoor environments via RSS-based method and mobile antenna topology correlation"
+  period: "2024"
+  year_end: 2024
+  featured: false
+  summary: "Investigate correlations between mobile antenna topologies and RSS-based DoA estimation for sub-degree accuracy indoors."
+  keywords: ["DoA", "RSS", "indoor", "antenna topology"]
+  links:
+    paper: "https://2024.apsursi.org/view_paper.php?PaperNum=2201"
+  my_contribution_todo:
+    - "TODO: add details: dataset/setup, metric, key finding"
+  demo_idea:
+    - "Interactive: switch antenna topology preset → show predicted DoA bias trend"
+
+- title: "Dual-harmonic dual-band mmWave phased array (24/48 GHz) with frequency-reconfigurable boundary + spacing tuning"
+  period: "2024–2025"
+  year_end: 2025
+  featured: false
+  summary: "Compact phased array enabling dual-harmonic operation for widely separated mmWave bands with strong beam-steering performance."
+  keywords: ["phased array", "mmWave", "beam steering", "ISAC"]
+  links:
+    paper: "https://doi.org/10.1109/TAP.2025.3568600"
+  my_contribution_todo:
+    - "TODO: your role (design, simulation, measurement, integration)"
+  demo_idea:
+    - "Web plot: steering angle slider → show beam direction (polar plot SVG/Canvas)"
+
+- title: "Multi-frequency RF feeding network for concurrent wireless systems"
+  period: "2024–2025"
+  year_end: 2025
+  featured: false
+  summary: "Compact feeding/matching network to support concurrent multi-frequency operation for modern wireless comm/sensing."
+  keywords: ["RF", "matching network", "multi-frequency", "mmWave"]
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2025.3585307"
+  my_contribution_todo:
+    - "TODO: contribution + measured specs you want to highlight"
+  demo_idea:
+    - "Interactive: show S-parameter plot images with brief captions"
+
+- title: "mmWave/sub-THz spherical far-field antenna measurement system"
+  period: "2023–2024"
+  year_end: 2024
+  featured: false
+  summary: "Cost-effective multi-functional far-field measurement system and practical fixturing/measurement scenarios."
+  keywords: ["antenna measurement", "mmWave", "sub-THz", "far-field"]
+  links:
+    paper: "https://doi.org/10.1109/MAP.2024.3389456"
+  my_contribution_todo:
+    - "TODO: your part (system design, calibration, experiments, analysis)"
+  demo_idea:
+    - "Embed photos/diagrams + a short walkthrough video"
+    - "Interactive 3D: rotate a DUT model (optional)"
+
+- title: "Antenna-in-Package co-design in FOWLP (warpage/die-shift aware)"
+  period: "2024–2025"
+  year_end: 2025
+  featured: false
+  summary: "Co-design methodology for DRA-based AiP in FOWLP considering fabrication constraints such as warpage and die shift."
+  keywords: ["AiP", "FOWLP", "co-design", "DRA"]
+  links:
+    paper: "https://doi.org/10.1109/MAP.2024.3495674"
+  my_contribution_todo:
+    - "TODO: what you want recruiters to remember (problem→approach→impact)"
+  demo_idea:
+    - "SVG stack-up diagram with tooltips (RDL, die, antenna, constraints)"
