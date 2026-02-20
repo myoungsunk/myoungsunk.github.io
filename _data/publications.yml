@@ -1,22 +1,129 @@
-main:
+ # Put this file at: _data/publications.yml
+# Fields used by templates: title, authors, venue, year, month, type, doi, links, featured, tags
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+- title: "A Dual-Pronged Solution for Accurate Decentralized Tag Systems: RSSD-Based DoA and Tag Design"
+  authors: "Myoungsun Kim, Sirous Bahrami, Wonbin Hong"
+  venue: "IEEE Internet of Things Journal"
+  year: 2025
+  month: "Nov"
+  type: "Journal"
+  doi: "10.1109/JIOT.2025.3604049"
+  links:
+    doi: "https://doi.org/10.1109/JIOT.2025.3604049"
+    paper: "https://www.researchgate.net/publication/389986706_A_Dual-Pronged_Solution_for_Accurate_Decentralized_Tag_Systems_RSSD-Based_DoA_and_Tag_Design"
+  featured: true
+  tags: ["localization", "DoA", "RSSD", "decentralized"]
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+- title: "Compensating Field-of-View Constraints for Decentralized Indoor Localization using Multi-Pose Techniques"
+  authors: "M. Kim, S. Bahrami, W. Hong"
+  venue: "IEEE Transactions on Antennas and Propagation"
+  year: 2025
+  type: "Journal"
+  doi: "10.1109/TAP.2025.3588741"
+  links:
+    doi: "https://doi.org/10.1109/TAP.2025.3588741"
+    paper: ""   # TODO: add IEEE Xplore / author preprint link
+  featured: true
+  tags: ["indoor localization", "DoA", "calibration", "multi-pose"]
+
+- title: "Adaptive Calibration for Indoor DoA Estimation: Achieving 360° Coverage and Improved Accuracy"
+  authors: "Myoungsun Kim, Wonbin Hong"
+  venue: "IEEE AP-S/URSI (AP-S/CNC/USNC-URSI)"
+  year: 2025
+  month: "Jul"
+  type: "Conference"
+  doi: "10.1109/AP-S/CNC-USNC-URSI55537.2025.11265983"
+  links:
+    doi: "https://doi.org/10.1109/AP-S/CNC-USNC-URSI55537.2025.11265983"
+    paper: "https://www.researchgate.net/publication/398469819_Adaptive_Calibration_for_Indoor_DoA_Estimation_Achieving_360_Coverage_and_Improved_Accuracy"
+  featured: true
+  tags: ["DoA", "indoor", "calibration", "360 coverage"]
+
+- title: "Correlating Mobile Antenna Topologies with Received Signal Strength-based Direction-of-Arrival Estimation Method for Sub-Degree Accuracy within Indoor Environments"
+  authors: "Myoungsun Kim, Wonbin Hong"
+  venue: "IEEE AP-S/URSI 2024 (Florence)"
+  year: 2024
+  month: "Jul"
+  type: "Conference"
+  doi: ""  # 확실하지 않음 (프로그램 페이지로 확인; IEEE Xplore DOI는 별도 확인 필요)
+  links:
+    paper: "https://2024.apsursi.org/view_paper.php?PaperNum=2201"
+  featured: false
+  tags: ["DoA", "RSS", "indoor", "sub-degree"]
+
+- title: "Wireless Coverage Enhancement via EM Scattering Redistribution"
+  authors: "Wonjeong Jo, Hyunjae Shin, Donggeun An, Myoungsun Kim, et al."
+  venue: "International Symposium on Antennas and Propagation (ISAP)"
+  year: 2025
+  month: "Oct"
+  type: "Conference"
+  doi: "10.23919/ISAP63122.2025.11362157"
+  links:
+    doi: "https://doi.org/10.23919/ISAP63122.2025.11362157"
+    paper: "https://www.researchgate.net/publication/386835290_Wireless_Coverage_Enhancement_via_EM_Scattering_Redistribution"
+  featured: false
+  tags: ["coverage", "EM scattering", "propagation"]
+
+- title: "Frequency-Selective Feeding Network for Concurrent Multi-Frequency Wireless Systems Using Enhanced Multi-Stub Line Matching Topology"
+  authors: "Jeonghyo Lee, Dongseop Lee, Myoungsun Kim, Wonjeong Jo, Sungjun Han, Wonbin Hong"
+  venue: "IEEE Access"
+  year: 2025
+  type: "Journal"
+  doi: "10.1109/ACCESS.2025.3585307"
+  links:
+    doi: "https://doi.org/10.1109/ACCESS.2025.3585307"
+    paper: "https://www.researchgate.net/publication/393351417_Frequency-Selective_Feeding_Network_for_Concurrent_Multi-Frequency_Wireless_Systems_using_Enhanced_Multi-Stub_Line_Matching_Topology"
+  featured: false
+  tags: ["RF front-end", "multi-frequency", "matching", "mmWave"]
+
+- title: "Dual-Band Phased Array for Widely Separated mmWave Frequencies Using Resonant Boundary Control and Passive Spacing Reconfiguration"
+  authors: "Jeonghyo Lee, Dongseop Lee, Myoungsun Kim, Wonjeong Jo, Sungjun Han, Wonbin Hong"
+  venue: "IEEE Transactions on Antennas and Propagation"
+  year: 2025
+  month: "Jan"
+  type: "Journal"
+  doi: "10.1109/TAP.2025.3568600"
+  links:
+    doi: "https://doi.org/10.1109/TAP.2025.3568600"
+    paper: "https://www.researchgate.net/publication/391792029_Dual-Band_Phased_Array_for_Widely_Separated_mmWave_Frequencies_Using_Resonant_Boundary_Control_and_Passive_Spacing_Reconfiguration"
+  featured: false
+  tags: ["phased array", "mmWave", "ISAC"]
+
+- title: "Co-Design of Dielectric Resonator-Based Antenna-in-Packaging in FOWLP Technology: Addresses warpage and die shift during fabrication"
+  authors: "Sirous Bahrami, Dongseop Lee, Myoungsun Kim, Donghoon Oh, Jin-guk Lee, Wonbin Hong, Ho-Jin Song"
+  venue: "IEEE Antennas and Propagation Magazine"
+  year: 2025
+  type: "Journal"
+  doi: "10.1109/MAP.2024.3495674"
+  links:
+    doi: "https://doi.org/10.1109/MAP.2024.3495674"
+    paper: "https://www.researchgate.net/publication/396092647_Co-Design_of_Dielectric_Resonator-Based_Antenna-in-Packaging_in_FOWLP_Technology_Addresses_warpage_and_die_shift_during_fabrication"
+    preprint: "https://www.techrxiv.org/users/859295/articles/1245518-co-design-of-dielectric-resonator-based-antenna-in-packaging-in-fowlp-technology"
+  featured: false
+  tags: ["antenna-in-package", "FOWLP", "co-design"]
+
+- title: "Streamlined Millimeter-Wave and Subterahertz Spherical Far-Field Measurement System Supporting Various Antenna Types and Feed Interfaces: Use cases of antenna measurement system"
+  authors: "Jae-Yeong Lee, Jaehyun Choi, Myoungsun Kim, Dongseop Lee, et al."
+  venue: "IEEE Antennas and Propagation Magazine"
+  year: 2024
+  month: "Aug"
+  type: "Journal"
+  doi: "10.1109/MAP.2024.3389456"
+  links:
+    doi: "https://doi.org/10.1109/MAP.2024.3389456"
+    paper: "https://www.researchgate.net/publication/380470364_Streamlined_Millimeter-Wave_and_Subterahertz_Spherical_Far-Field_Measurement_System_Supporting_Various_Antenna_Types_and_Feed_Interfaces_Use_cases_of_antenna_measurement_system"
+  featured: false
+  tags: ["antenna measurement", "mmWave", "sub-THz", "far-field"]
+
+- title: "Antenna-on-Display with EH 1-mode Wide Spatial Beam Scanning for User-Centric Sensing and Vehicle-to-Everything Communication"
+  authors: "Dongseop Lee, Bumhyun Kim, Myoungsun Kim, Youngno Youn, et al."
+  venue: "IEEE Transactions on Vehicular Technology"
+  year: 2025
+  month: "Jan"
+  type: "Journal"
+  doi: "10.1109/TVT.2024.3511093"
+  links:
+    doi: "https://doi.org/10.1109/TVT.2024.3511093"
+    paper: "https://www.researchgate.net/publication/388690995_Antenna-on-Display_with_EH_1-mode_Wide_Spatial_Beam_Scanning_for_User-Centric_Sensing_and_Vehicle-to-Everything_Communication"
+  featured: false
+  tags: ["antenna-on-display", "beam scanning", "V2X", "sensing"]
