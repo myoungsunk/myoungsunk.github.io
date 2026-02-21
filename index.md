@@ -123,8 +123,6 @@ permalink: /
     <p>
       <a href="https://scholar.google.com/citations?user=fD7i2qgAAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
       ·
-      <a href="https://github.com/myoungsunk" target="_blank" rel="noopener">GitHub</a>
-      ·
       <a href="{{ '/assets/files/cv/CV_Myoungsunkim_25.05_ticra.docx' | relative_url }}">CV (DOCX)</a>
       ·
       <a href="{{ '/assets/files/curriculum_vitae.pdf' | relative_url }}">CV (PDF)</a>

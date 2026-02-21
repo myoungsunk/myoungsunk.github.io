@@ -21,7 +21,7 @@ canonical: "https://myoungsunk.github.io/"  # 확실하지 않음: User Pages UR
 # =========================
 google_scholar: "https://scholar.google.com/citations?user=fD7i2qgAAAAJ&hl=ko&oi=ao"
 cv_link: "/assets/files/cv/CV_Myoungsunkim_25.05_ticra.html"
-github_link: "https://github.com/myoungsunk"  # 확실하지 않음
+github_link:
 linkedin: ""   # optional
 twitter: ""    # optional
 
