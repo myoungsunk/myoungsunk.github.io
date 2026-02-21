@@ -20,7 +20,7 @@ canonical: "https://myoungsunk.github.io/"  # 확실하지 않음: User Pages UR
 # Links (delete unused lines if you want)
 # =========================
 google_scholar: "https://scholar.google.com/citations?user=fD7i2qgAAAAJ&hl=ko&oi=ao"
-cv_link: "assets/files/cv.pdf"
+cv_link: "/assets/files/cv/CV_Myoungsunkim_25.05_ticra.html"
 github_link: "https://github.com/myoungsunk"  # 확실하지 않음
 linkedin: ""   # optional
 twitter: ""    # optional
@@ -28,9 +28,9 @@ twitter: ""    # optional
 # =========================
 # Images
 # =========================
-avatar: "./assets/img/avatar.png"
-favicon: "./assets/img/favicon.png"
-favicon_dark: "./assets/img/favicon-dark.png"
+avatar: "/assets/img/profile-photo.jpg"
+favicon: "/assets/img/favicon.png"
+favicon_dark: "/assets/img/favicon-dark.png"
 
 # =========================
 # Theme options
@@ -49,6 +49,26 @@ remote_theme: yaoyao-liu/minimal-light
 
 plugins:
   - jekyll-remote-theme
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 exclude:
   - Gemfile

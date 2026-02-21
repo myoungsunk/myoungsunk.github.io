@@ -2,3 +2,120 @@
 ---
 
 @import "minimal-light";
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.topnav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+.page-wrap {
+  margin-top: 0.5rem;
+}
+
+.page-subtitle {
+  color: var(--global-text-color-light);
+}
+
+.year-group {
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.pub-item,
+.project-card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.pub-title {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+.pub-link-row {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.pub-link-row a {
+  text-decoration: none;
+}
+
+.pub-detail,
+.proj-detail {
+  max-width: 860px;
+}
+
+.pub-meta,
+.proj-meta {
+  color: var(--global-text-color-light);
+  margin-bottom: 0.9rem;
+}
+
+.detail-block {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.detail-block h2,
+.detail-block h3 {
+  margin-bottom: 0.45rem;
+}
+
+.pub-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn {
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.fig {
+  margin: 0.8rem 0;
+}
+
+.fig img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+}
+
+.fig figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.embed-16x9 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+}
+
+.embed-16x9 iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dual-Band Phased Array for Widely Separated mmWave Frequencies Using Resonant Boundary Control and Passive Spacing Reconfiguration</title>
+  <desc id="desc">Placeholder schematic for publication detail page.</desc>
+  <rect width="1200" height="630" fill="#f8fbff" />
+  <rect x="80" y="70" width="1040" height="490" rx="20" fill="#ffffff" stroke="#0b3a6f" stroke-width="4" />
+  <text x="120" y="170" font-size="42" font-family="Georgia, serif" fill="#0b3a6f">One-Figure Summary</text>
+  <text x="120" y="240" font-size="28" font-family="Georgia, serif" fill="#333333">Replace this SVG with your pipeline/idea schematic.</text>
+  <line x1="120" y1="290" x2="1080" y2="290" stroke="#d4deea" stroke-width="2" />
+  <text x="120" y="360" font-size="24" font-family="Georgia, serif" fill="#4a4a4a">IEEE Transactions on Antennas and Propagation (2025)</text>
+</svg>

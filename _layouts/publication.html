@@ -1,0 +1,108 @@
+---
+layout: page
+---
+<article class="pub-detail">
+  {% assign pdf_href = page.pdf %}
+  {% if page.pdf and page.pdf contains '://' %}
+    {% assign pdf_href = page.pdf %}
+  {% elsif page.pdf %}
+    {% assign pdf_href = page.pdf | relative_url %}
+  {% endif %}
+  <h1>{{ page.title }}</h1>
+
+  <div class="pub-meta">
+    {% if page.authors %}<div>{{ page.authors }}</div>{% endif %}
+    <div>
+      {% if page.venue %}{{ page.venue }}{% endif %}
+      {% if page.type %} · {{ page.type }}{% endif %}
+      {% if page.year %} · {{ page.year }}{% endif %}
+    </div>
+  </div>
+
+  {% if page.tldr %}
+  <section class="detail-block">
+    <h2>TL;DR</h2>
+    <ul>
+      {% for x in page.tldr %}
+      <li>{{ x }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.diagram %}
+  <section class="detail-block">
+    <h2>One Figure</h2>
+    {% include figure.html src=page.diagram alt="idea diagram" caption=page.diagram_caption %}
+  </section>
+  {% endif %}
+
+  {% if page.method_steps %}
+  <section class="detail-block">
+    <h2>Method</h2>
+    <ol>
+      {% for step in page.method_steps %}
+      <li>{{ step }}</li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if page.results %}
+  <section class="detail-block">
+    <h2>Results</h2>
+    <ul>
+      {% for r in page.results %}
+      <li>{{ r }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.result_figures %}
+  <section class="detail-block">
+    <h3>Key Figures</h3>
+    {% for fig in page.result_figures %}
+      {% include figure.html src=fig.src alt=fig.alt caption=fig.caption %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if page.demo %}
+  <section class="detail-block">
+    <h2>Interactive Demo</h2>
+    {% include demo_iframe.html src=page.demo %}
+    <p><a href="{{ page.demo | relative_url }}" target="_blank" rel="noopener">Open demo in new tab</a></p>
+  </section>
+  {% endif %}
+
+  <section class="detail-block">
+    <h2>Details</h2>
+    {{ content }}
+  </section>
+
+  <section class="detail-block">
+    <h2>Artifacts</h2>
+    <div class="pub-buttons">
+      {% if page.doi %}<a class="btn" href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+      {% if page.pdf %}<a class="btn" href="{{ pdf_href }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      {% if page.code %}<a class="btn" href="{{ page.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      {% if page.demo %}<a class="btn" href="{{ page.demo | relative_url }}">Demo</a>{% endif %}
+      {% if page.slides %}<a class="btn" href="{{ page.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+    </div>
+  </section>
+
+  {% if page.related_projects %}
+  <section class="detail-block">
+    <h2>Related Projects</h2>
+    <ul>
+      {% for k in page.related_projects %}
+      {% assign pr = site.projects | where: "key", k | first %}
+      {% if pr %}
+      <li><a href="{{ pr.url | relative_url }}">{{ pr.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>

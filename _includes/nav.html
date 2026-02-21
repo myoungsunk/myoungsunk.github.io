@@ -1,0 +1,7 @@
+<nav class="topnav">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>
+  <a href="{{ '/projects/' | relative_url }}">Projects</a>
+  {% if site.cv_link %}<a href="{{ site.cv_link | relative_url }}">CV</a>{% endif %}
+</nav>
+<hr>

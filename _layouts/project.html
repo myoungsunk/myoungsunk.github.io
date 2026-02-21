@@ -1,0 +1,98 @@
+---
+layout: page
+---
+<article class="proj-detail">
+  <h1>{{ page.title }}</h1>
+  {% if page.period %}<div class="proj-meta">{{ page.period }}</div>{% endif %}
+
+  {% if page.summary %}
+  <section class="detail-block">
+    <h2>Summary</h2>
+    <p>{{ page.summary }}</p>
+  </section>
+  {% endif %}
+
+  {% if page.diagram %}
+  <section class="detail-block">
+    <h2>Diagram</h2>
+    {% include figure.html src=page.diagram alt="project diagram" caption=page.diagram_caption %}
+  </section>
+  {% endif %}
+
+  {% if page.problem %}
+  <section class="detail-block">
+    <h2>Problem</h2>
+    <p>{{ page.problem }}</p>
+  </section>
+  {% endif %}
+
+  {% if page.setting %}
+  <section class="detail-block">
+    <h2>Setting</h2>
+    <ul>
+      {% for s in page.setting %}
+      <li>{{ s }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.contribution %}
+  <section class="detail-block">
+    <h2>My Contribution</h2>
+    <ul>
+      {% for c in page.contribution %}
+      <li>{{ c }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.results %}
+  <section class="detail-block">
+    <h2>Results</h2>
+    <ul>
+      {% for r in page.results %}
+      <li>{{ r }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.repro %}
+  <section class="detail-block">
+    <h2>Repro</h2>
+    <ul>
+      {% for x in page.repro %}
+      <li>{{ x }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.demo %}
+  <section class="detail-block">
+    <h2>Demo</h2>
+    {% include demo_iframe.html src=page.demo %}
+    <p><a href="{{ page.demo | relative_url }}" target="_blank" rel="noopener">Open demo in new tab</a></p>
+  </section>
+  {% endif %}
+
+  <section class="detail-block">
+    {{ content }}
+  </section>
+
+  {% if page.related_publications %}
+  <section class="detail-block">
+    <h2>Related Publications</h2>
+    <ul>
+      {% for k in page.related_publications %}
+      {% assign pb = site.publications | where: "key", k | first %}
+      {% if pb %}
+      <li><a href="{{ pb.url | relative_url }}">{{ pb.title }}</a>{% if pb.year %} ({{ pb.year }}){% endif %}</li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>
