@@ -18,7 +18,7 @@ permalink: /
     <div class="hero-actions">
       <a class="action-btn" href="{{ '/publications/' | relative_url }}">View Publications</a>
       <a class="action-btn action-btn-light" href="{{ '/projects/' | relative_url }}">View Projects</a>
-      <a class="action-btn action-btn-light" href="{{ '/assets/files/cv/CV_Myoungsunkim_25.05_ticra.html' | relative_url }}">Open CV</a>
+      <a class="action-btn action-btn-light" href="{{ '/assets/files/cv/Myoungsun_Kim_CV_FINAL_20260305.html' | relative_url }}">Open CV</a>
     </div>
     <ul class="metric-chips">
       <li>POSTECH EE Ph.D.</li>
@@ -123,9 +123,9 @@ permalink: /
     <p>
       <a href="https://scholar.google.com/citations?user=fD7i2qgAAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
       ·
-      <a href="{{ '/assets/files/cv/CV_Myoungsunkim_25.05_ticra.docx' | relative_url }}">CV (DOCX)</a>
+      <a href="{{ '/assets/files/cv/Myoungsun_Kim_CV_FINAL_20260305.docx' | relative_url }}">CV (DOCX)</a>
       ·
-      <a href="{{ '/assets/files/curriculum_vitae.pdf' | relative_url }}">CV (PDF)</a>
+      <a href="{{ '/assets/files/cv/Myoungsun_Kim_CV_FINAL_20260305.html' | relative_url }}">CV (WEB)</a>
     </p>
   </section>
 </div>
